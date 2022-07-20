@@ -31,6 +31,5 @@ but to achieve a dynamic and scalable solution I stored product types in a separ
 - Add user/customer information to the orders
 - Add more tests for full coverage
 - Add pagination to the orders and product list
-- Add user management (login, register, logout)
 
 *Unfortunately, I haven't found the time to finish this project the way I wanted and I spent only two days on this repo, but if I had more time I would've continued with the above improvements.*
