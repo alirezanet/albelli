@@ -1,0 +1,16 @@
+{
+   "tasks": [
+      {
+         "name": "dotnet-format",
+         "command": "dotnet",
+         "group": "pre-commit",
+         "args": ["dotnet-format", "--include" , "${staged}"],
+         "include": ["**/*.cs"]
+      },
+      {
+         "name": "linter",
+         "command": "dotnet",
+         "args": ["husky", "exec", ".husky/csx/linter.csx", "--args", "${args}"]
+      }
+   ]
+}
