@@ -22,7 +22,7 @@ it accepts an order, stores it, and responds with the minimum bin width.
 - Add pagination to the orders and product list
 - Add user management (login, register, logout)
 
-*I spent about two days on this repo but if I had more time I would continue with the above improvements.*
+*Unfortunately, I haven't found the time to finish this project the way I wanted and I spent only two days on this repo, but f I had more time I would continue with the above improvements.*
 
 
 # Note:
