@@ -25,7 +25,9 @@ public class CreateOrderHandler : IRequestHandler<CreateOrderCommand, ErrorOr<st
     {
         // Check product types
         var requestProductIds = request.Products.Select(q => q.ProductId);
-        var products = await _context.ProductTypes.Where(q => requestProductIds.Contains(q.Id))
+        var products = await _context.ProductTypes
+            .AsNoTracking()
+            .Where(q => requestProductIds.Contains(q.Id))
             .ToListAsync(cancellationToken);
 
         var invalidProductIds = requestProductIds.Except(products.Select(x => x.Id)).ToList();
