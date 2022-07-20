@@ -12,6 +12,17 @@ it accepts an order, stores it, and responds with the minimum bin width.
 - run `dotnet build`
 - run `dotnet run --project .\src\WebAPI\WebAPI.csproj`
 
+
+# Note:
+
+I deviated a little bit from the albelli assessment task in some places because I thought descriptions are not correct or accurate at least,
+For example in the  **Order information submitted by customers** part getting `OrderId` from the customer didn't make sense.
+So instead After saving the order I'll return the OrderId along with the minimum bin width.
+
+Or It was much easier to accept product types as strings and have a simple validation rule to check if the product type is valid.
+but to achieve a dynamic and scalable solution I stored product types in a separate table and used product Ids instead.
+
+
 # Improvements (TODO)
 
 - **Better error handling**
@@ -23,13 +34,3 @@ it accepts an order, stores it, and responds with the minimum bin width.
 - Add user management (login, register, logout)
 
 *Unfortunately, I haven't found the time to finish this project the way I wanted and I spent only two days on this repo, but if I had more time I would've continued with the above improvements.*
-
-
-# Note:
-
-I deviated a little bit from the albelli assessment task in some places because I thought descriptions are not correct or accurate at least,
-For example in the  **Order information submitted by customers** part getting `OrderId` from the customer didn't make sense.
-So instead After saving the order I'll return the OrderId along with the minimum bin width.
-
-Or It was much easier to accept product types as strings and have a simple validation rule to check if the product type is valid.
-but to achieve a dynamic and scalable solution I stored product types in a separate table and used product Ids instead.
