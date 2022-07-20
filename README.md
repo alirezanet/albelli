@@ -10,16 +10,17 @@ it accepts an order, stores it, and responds with the minimum bin width.
 - Follow the below steps to build the project
 - run `dotnet restore`
 - run `dotnet build`
-- run `dotnet run`
+- run `dotnet run --project .\src\WebAPI\WebAPI.csproj`
 
 # Improvements (TODO)
 
 - **Better error handling**
-- Add user management (login, register, logout)
-- Add user/customer information to the orders
-- Add pagination to the orders and product list
 - CRUD for products
+- Add FluentValidation rules
+- Add user/customer information to the orders
 - Add more tests for full coverage
+- Add pagination to the orders and product list
+- Add user management (login, register, logout)
 
 *I spent about two days on this repo but if I had more time I would continue with the above improvements.*
 
